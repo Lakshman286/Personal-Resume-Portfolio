@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Golla Vara Lakshman Naidu — Frontend Developer</title>
+  <meta name="description" content="Portfolio of Golla Vara Lakshman Naidu — frontend developer building web & AI experiences." />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preload" href="hero-bg.jpg" as="image">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Modern Typing Animation Loader -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="typing-loader">
+      <div class="loader-content">
+        <div class="typing-container">
+          <div class="typing-text">
+            <span class="typed-text"></span>
+            <span class="cursor">|</span>
+          </div>
+          <div class="loader-subtitle">Portfolio Loading</div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <div class="progress-text">
+            <span class="progress-percent">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content (hidden initially) -->
+  <div id="main-content" style="display: none;">
+    <!-- BACKDROP SHAPES for depth / parallax -->
+    <div id="bg-shapes" aria-hidden="true">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+      <div class="shape s4"></div>
+    </div>
+
+    <!-- HEADER / HERO -->
+    <header class="hero glass">
+      <div class="hero-content">
+        <div class="avatar">
+          <img src="hero-bg.jpg" alt="Lakshman hero" class="profile-img" width="160" height="160" loading="eager" fetchpriority="high">
+        </div>
+        <div class="hero-text">
+          <h1>Golla Vara Lakshman Naidu</h1>
+          <p class="subtitle">Frontend Developer & AI Integrator</p>
+          <p class="description">Building accessible, performant web experiences with modern technologies</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#portfolio">View Work</a>
+            <a class="btn outline" href="documents/resume.pdf" download="Lakshman_Resume.pdf">Download Resume.pdf</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="number">4+</span>
+          <span class="label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="number">1</span>
+          <span class="label">Internship</span>
+        </div>
+        <div class="stat">
+          <span class="number">7.5</span>
+          <span class="label">GPA</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAV -->
+    <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+      <a class="nav-link active" href="#about">About</a>
+      <a class="nav-link" href="#resume">Resume</a>
+      <a class="nav-link" href="#portfolio">Portfolio</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <!-- MAIN -->
+    <main id="siteMain">
+      <!-- ABOUT -->
+      <section id="about" class="section glass">
+        <div class="split">
+          <div class="content">
+            <h2>About Me</h2>
+            <p>Frontend developer focused on accessible, performant interfaces. I build with HTML, CSS, JS and integrate LLMs for smarter UX.</p>
+            <ul class="chips">
+              <li>React</li><li>Streamlit</li><li>LLM Integration</li><li>Figma</li>
+            </ul>
+          </div>
+          <div class="visual">
+            <div class="mini-card glass neon-ghost">EduChat AI • LLaMA + ChromaDB</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="section glass">
+        <h2>Resume</h2>
+        <div class="resume-container">
+          <article class="resume-card glass">
+            <h3>Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="date">2023 - Present</span>
+                <strong>B.Tech — ECE</strong>
+                <p>Chalapathi Institute of Engineering and Technology</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="resume-card glass">
+            <h3>Experience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="date">2024 - Present</span>
+                <strong>Frontend Dev Intern</strong>
+                <p>Streamlit AI projects, performance optimizations.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="skills-heading">Skills</h3>
+        <div id="skills" class="skills-container">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">HTML</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="90" style="width: 0"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">CSS</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="70" style="width: 0"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="70" style="width: 0"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="80" style="width: 0"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">Streamlit</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="85" style="width: 0"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-header">
+                <span class="skill-name">LLM Integration</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-percent="75" style="width: 0"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="section glass">
+        <h2>Portfolio</h2>
+        <div class="portfolio-controls">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ai">AI</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card" data-category="ai" data-title="EduChat AI" data-image="project1.jpg" data-tech="Python, LLaMA, ChromaDB" data-desc="A smart campus chatbot that answers academic & campus queries.">
+            <div class="portfolio-media">
+              <img src="project1.jpg" alt="EduChat AI" loading="lazy" width="1200" height="700">
+              <div class="portfolio-overlay">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>EduChat AI</h3>
+              <div class="portfolio-tags">
+                <span class="tag">AI Project</span>
+              </div>
+              <p>A smart campus chatbot that answers academic & campus queries.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-category="web" data-title="Portfolio Website" data-image="project2.png" data-tech="HTML, CSS, JS" data-desc="Responsive portfolio with dark/light mode and performance best practices.">
+            <div class="portfolio-media">
+              <img src="project2.png" alt="Portfolio Website" loading="lazy" width="1200" height="700">
+              <div class="portfolio-overlay">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3>Portfolio Website</h3>
+              <div class="portfolio-tags">
+                <span class="tag">Web</span>
+              </div>
+              <p>Responsive portfolio with dark/light mode and performance best practices.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section glass">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-panel glass neon-ghost">
+            <h3>Get in touch</h3>
+            <p>Open to freelance & internship opportunities.</p>
+            <div class="contact-list">
+              <div class="contact-item" data-copy="naidugolla286@gmail.com" role="button" tabindex="0">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-info">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:naidugolla286@gmail.com">naidugolla286@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item" data-copy="+918179813994" role="button" tabindex="0">
+                <i class="fas fa-phone"></i>
+                <div class="contact-info">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+918179813994">+91 8179813994</a>
+                </div>
+              </div>
+              <div class="contact-item" data-copy="Andhra Pradesh, India" role="button" tabindex="0">
+                <i class="fas fa-location-dot"></i>
+                <div class="contact-info">
+                  <span class="contact-label">Location</span>
+                  <span>Andhra Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="socials">
+              <a href="https://github.com/Lakshman286" aria-label="GitHub" target="_blank" rel="noopener" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/golla-vara-lakshman-naidu-0730ab280" aria-label="LinkedIn" target="_blank" rel="noopener" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form glass" action="https://formspree.io/f/mzzrokyk" method="POST">
+            <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your name" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your email" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" class="form-input">
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Message" class="form-input" required rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn primary full">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER + back-to-top -->
+    <footer class="glass">
+      <div class="footer-content">
+        <div>© <span id="currentYear"></span> Golla Vara Lakshman Naidu</div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#resume">Resume</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop" aria-hidden="true">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- PORTFOLIO MODAL -->
+    <div id="portfolioModal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modalTitle">
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+      <div class="modal-card glass">
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-media">
+          <img id="modalImage" src="" alt="">
+        </div>
+        <div class="modal-body">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+          <p class="modal-tech" id="modalTech"></p>
+          <div class="modal-actions">
+            <a id="modalDemo" class="btn outline" href="#" target="_blank" rel="noopener">Open demo</a>
+            <a id="modalCode" class="btn primary" href="#" target="_blank" rel="noopener">View code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
